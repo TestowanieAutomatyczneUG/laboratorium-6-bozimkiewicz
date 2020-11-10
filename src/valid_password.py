@@ -29,7 +29,7 @@ class PasswordCheckerTest(unittest.TestCase):
     def setUp(self):
         self.temp = PasswordChecker()
 
-    def test_is_working(self):
+    def test_valid_password(self):
         self.assertEqual(self.temp.valid_password('aBcdE?56'), True)
 
     def test_disallow_too_short_password(self):
